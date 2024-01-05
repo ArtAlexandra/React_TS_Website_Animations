@@ -1,0 +1,29 @@
+.circle{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(237, 155, 155);
+    border-radius: 50%;
+    position: relative;
+    animation: white-circle 3s infinite;
+}
+.app{
+    background-color: bisque;
+}
+.app:hover .circle{
+    animation-play-state: paused;
+}
+
+
+@keyframes white-circle{
+    0% {
+        left:0px;
+        background-color: aquamarine;
+    }
+    50%{
+        left:800px;
+    }
+    100% {
+        left:0px;
+        background-color: black;
+    }
+}
